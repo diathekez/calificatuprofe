@@ -4,6 +4,8 @@ A full-stack web app where students can leave public but anonymous reviews of th
 
 **Link to project:** https://calificatuprofe.herokuapp.com/
 
+**NOTE:** I'm currently migrating my projects out of Heroku and into Railway and Cyclic.
+
 ![Califica Tu Profe app landing page](https://raw.githubusercontent.com/diathekez/calificatuprofe/master/public/imgs/calificatuprofe-app.png)
 
 ## How It's Made
