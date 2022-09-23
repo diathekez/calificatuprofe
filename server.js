@@ -1,4 +1,7 @@
 const express = require("express");
+const ejs = require("express");
+const bodyParser = require("body-parser");
+const path = require("path");
 const app = express();
 const mongoose = require("mongoose");
 const passport = require("passport");
@@ -22,7 +25,15 @@ require("./config/passport")(passport);
 connectDB();
 
 //Using EJS for views
+app.set('views', path.join(__dirname, 'views'));
 app.set("view engine", "ejs");
+
+// Dist folder for Tailwind
+app.use(express.static(path.join(__dirname, 'dist')))
+
+app.get("/", (req, res) => {
+  res.render("index");
+});
 
 //Static Folder
 app.use(express.static("public"));
