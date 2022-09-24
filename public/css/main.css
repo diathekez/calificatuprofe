@@ -2091,6 +2091,11 @@ html {
   font-size: 2rem;
 }
 
+.three-cards{
+  width: 250px;
+  height: 250px;
+}
+
 @media (min-width: 976px) {
   .lg\:flex {
     display: flex;
