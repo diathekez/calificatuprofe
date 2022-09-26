@@ -9,6 +9,8 @@ A full-stack web app where students can leave public but anonymous reviews of th
 
 **Tech used:** HTML, CSS, JavaScript, EJS, Express, Node.js, MongoDB, Tailwind (with DaisyUI)
 
+**Important:** You must have [Node.js](https://nodejs.org/en/download/) installed and both a [MongoDB](https://www.mongodb.com/) and a [Cloudinary](https://cloudinary.com/) account. Both [Tailwind](https://tailwindcss.com/docs/installation) and [DaisyUI](https://daisyui.com/docs/install/) have already been configured in the app, but I recommend checking out the documentation if you're new to using CSS frameworks.
+
 IN PROGRESS
 
 ## Optimizations
