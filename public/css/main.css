@@ -2096,6 +2096,14 @@ html {
   height: 250px;
 }
 
+.header-logo{
+  margin-right: 15px;
+}
+
+#header-name{
+  font-size: 1.5rem;
+}
+
 @media (min-width: 976px) {
   .lg\:flex {
     display: flex;
