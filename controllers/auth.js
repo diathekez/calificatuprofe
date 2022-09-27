@@ -14,9 +14,9 @@ exports.getLogin = (req, res) => {
 exports.postLogin = (req, res, next) => {
   const validationErrors = [];
   if (!validator.isEmail(req.body.email))
-    validationErrors.push({ msg: "Please enter a valid email address." });
+    validationErrors.push({ msg: "Por favor, introduce un email válido." });
   if (validator.isEmpty(req.body.password))
-    validationErrors.push({ msg: "Password cannot be blank." });
+    validationErrors.push({ msg: "La contraseña no puede estar en blanco." });
 
   if (validationErrors.length) {
     req.flash("errors", validationErrors);
@@ -38,7 +38,7 @@ exports.postLogin = (req, res, next) => {
       if (err) {
         return next(err);
       }
-      req.flash("success", { msg: "Success! You are logged in." });
+      req.flash("success", { msg: "¡Éxito! Estás conectado." });
       res.redirect(req.session.returnTo || "/profile");
     });
   })(req, res, next);
@@ -68,13 +68,13 @@ exports.getSignup = (req, res) => {
 exports.postSignup = (req, res, next) => {
   const validationErrors = [];
   if (!validator.isEmail(req.body.email))
-    validationErrors.push({ msg: "Please enter a valid email address." });
+    validationErrors.push({ msg: "Por favor, introduce un email válido." });
   if (!validator.isLength(req.body.password, { min: 8 }))
     validationErrors.push({
-      msg: "Password must be at least 8 characters long",
+      msg: "La contraseña debe tener al menos 8 caracteres.",
     });
   if (req.body.password !== req.body.confirmPassword)
-    validationErrors.push({ msg: "Passwords do not match" });
+    validationErrors.push({ msg: "Las contraseñas no coinciden." });
 
   if (validationErrors.length) {
     req.flash("errors", validationErrors);
@@ -98,7 +98,7 @@ exports.postSignup = (req, res, next) => {
       }
       if (existingUser) {
         req.flash("errors", {
-          msg: "Account with that email address or username already exists.",
+          msg: "Ya existe una cuenta con ese email o nombre de usuario.",
         });
         return res.redirect("../signup");
       }

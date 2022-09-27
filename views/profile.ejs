@@ -31,7 +31,7 @@
             <li><a>Acerca De</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost normal-case text-xl" id="header-name"><img class="header-logo" src="/imgs/calificatuprofe-logo.png" width="50px">Califica Tu Profe</img></a>
+        <a href="/" class="btn btn-ghost normal-case text-xl" id="header-name"><img class="header-logo" src="/imgs/calificatuprofe-logo.png" width="50px">Califica Tu Profe</img></a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal p-0">
@@ -54,6 +54,33 @@
           <p><%= user.userName %></p>
           <h2 class="card-title">Email</h2>
           <p><%= user.email %></p>
+        </div>
+      </div>
+
+      <div class="hero-content text-center">
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <div class="card-body">
+            <h2 class="card-title">Añadir una reseña</h2>
+            <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+              <h2 class="card-title"><label for="title" class="form-label">Centro educativo superior</label></h2>
+              <input type="text" class="form-control" id="title" name="title">
+              <h2 class="card-title"><label for="professor" class="form-label">Nombre del docente</label></h2>
+              <input type="text" class="form-control" id="professor" name="professor">
+              <h2 class="card-title">Reseña</h2>
+              <textarea class="form-control textarea textarea-accent" placeholder="Escribe tu reseña aquí." id="caption" name="caption"></textarea>
+              <label for="imgUpload" class="form-label">Imagen representativa</label>
+                <input type="file" class="form-control" id="imageUpload" name="file">
+              <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+            </form>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="hero-content text-center">
+      <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card-body">
           <div class="col-6">
             <ul class="row list-unstyled">
             <% for(var i=0; i<posts.length; i++) {%>
@@ -72,27 +99,6 @@
       </div>
     </div>
   </section>
-  <section>
-    <div class="hero-content text-center">
-      <div class="card w-96 bg-base-100 shadow-xl">
-        <div class="card-body">
-          <h2 class="card-title">Añadir una reseña</h2>
-          <form action="/post/createPost" enctype="multipart/form-data" method="POST">
-            <h2 class="card-title"><label for="title" class="form-label">Centro educativo superior</label></h2>
-            <input type="text" class="form-control" id="title" name="title">
-            <h2 class="card-title"><label for="professor" class="form-label">Nombre del docente</label></h2>
-            <input type="text" class="form-control" id="professor" name="professor">
-            <h2 class="card-title">Reseña</h2>
-            <textarea class="form-control textarea textarea-accent" placeholder="Escribe tu reseña aquí." id="caption" name="caption"></textarea>
-            <label for="imgUpload" class="form-label">Imagen representativa</label>
-              <input type="file" class="form-control" id="imageUpload" name="file">
-            <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
 
   <footer class="footer footer-center p-10 bg-primary text-primary-content">
     <div>
