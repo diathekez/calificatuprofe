@@ -1,5 +1,5 @@
 # Califica Tu profe
-A full-stack web app where students can leave public but anonymous reviews of their professors.
+A full-stack web app where students can leave public but anonymous reviews of their professors, in Spanish.
 
 **Link to project:** http://LINK-COMING-SOON.com/
 
