@@ -53,12 +53,13 @@
         <img src="<%= post.image%>" class="max-w-sm rounded-lg shadow-2xl" />
         <div>
           <h1 class="text-5xl font-bold"><%= post.title %></h1>
-          <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          <p class="py-6"><%= post.caption %></p>
           <div>
             <form
               action="/post/likePost/<%= post.id %>?_method=PUT"
               method="POST">
               <button class="btn gap-2 fa-solid fa-heart" type="submit">
+                <i class="fa fa-heart" aria-hidden="true"></i>
               </button>
             </form>
             <h3 class="text-2xl font-bold">Likes: <%= post.likes %></h3>

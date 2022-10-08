@@ -3,7 +3,7 @@ A full-stack web app where students can leave public but anonymous reviews of th
 
 **Link to project:** https://calificatuprofe.herokuapp.com/
 
-![alt tag](#)
+![Califica Tu Profe app landing page](https://raw.githubusercontent.com/diathekez/calificatuprofe/master/public/imgs/calificatuprofe-app.png)
 
 ## How It's Made:
 

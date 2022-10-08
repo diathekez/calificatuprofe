@@ -19,6 +19,8 @@
     font-size: 1.5rem;
 }
 
-#login-hero{
-    
+.float-profile{
+    display:inline-block;
+    position:relative;
+    float:left;
 }
