@@ -2,7 +2,7 @@
 
 A full-stack web app where students can leave public but anonymous reviews of their professors, in Spanish.
 
-**Link to project:** https://calificatuprofe.herokuapp.com/
+**Link to project:** #
 
 **NOTE:** I'm currently migrating my projects out of Heroku and into Railway and Cyclic.
 
